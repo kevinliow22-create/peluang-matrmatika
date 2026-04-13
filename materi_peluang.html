@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materi Peluang</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: white;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        color: #cbd5f5;
+    }
+
+    .accordion {
+        background-color: #2563eb;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        font-size: 18px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .panel {
+        padding: 15px;
+        display: none;
+        background-color: #1e293b;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    .box {
+        background: #111827;
+        padding: 10px;
+        border-left: 4px solid #38bdf8;
+        margin-top: 10px;
+    }
+
+    .contoh {
+        background: #1f2937;
+        border: 1px dashed orange;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    h3 {
+        color: #22c55e;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Materi Peluang Matematika</h1>
+    <p>Klik pada menu untuk membuka atau menutup materi</p>
+
+    <!-- 1 -->
+    <button class="accordion">1. Kaidah Pencacahan</button>
+    <div class="panel">
+
+        <p><b>Kaidah pencacahan</b> adalah cara menghitung banyaknya kemungkinan kejadian tanpa menuliskannya satu per satu.</p>
+
+        <h3>A. Faktorial</h3>
+        <p>Faktorial adalah hasil perkalian bilangan dari 1 sampai n.</p>
+
+        <div class="box">
+            n! = n × (n-1) × (n-2) × ... × 1
+        </div>
+
+        <div class="contoh">
+            Contoh: 5! = 5 x 4 x 3 x 2 x 1 = 120
+        </div>
+
+        <h3>B. Permutasi</h3>
+        <p>Permutasi adalah penyusunan dengan memerhatikan urutan.</p>
+
+        <div class="box">
+            P(n,r) = n! / (n-r)!
+        </div>
+
+        <div class="contoh">
+            Contoh: P(5,3) = 5! / 2!
+= 5 × 4 × 3
+= 60
+        </div>
+
+        <h3>C. Kombinasi</h3>
+        <p>Kombinasi adalah penyusunan tanpa memperhatikan urutan.</p>
+
+        <div class="box">
+            C(n,r) = n! / r! (n-r)!
+        </div>
+
+        <div class="contoh">
+            Contoh: C(5,3) = 5! / (3! × 2!)
+= (5 × 4 × 3!) / (3! × 2)
+= 20 / 2
+= 10
+        </div>
+
+    </div>
+
+    <!-- 2 -->
+    <button class="accordion">2. Peluang Suatu Kejadian</button>
+    <div class="panel">
+
+        <p><b>Peluang suatu kejadian</b> adalah kemungkinan terjadinya suatu peristiwa.</p>
+
+        <div class="box">
+            P(A) = n(A) / n(S)
+        </div>
+
+        <h3>Percobaan</h3>
+        <p>Percobaan adalah kegiatan yang menghasilkan hasil.</p>
+
+        <div class="contoh">
+            Contoh: Saat kita melempar dadu kita tidak tahu angka berapa yang akan keluar
+        </div
+
+        <h3>Ruang Sampel</h3>
+        <p>Ruang sampel adalah semua hasil dari kemungkinan.</p>
+
+        <div class="contoh">
+            Contoh: Angka dadu 1 sampai dengan 6
+        </div>
+
+        <h3>Titik Sampel</h3>
+        <p>Titik sampel adalah anggota dari ruang sampel.</p>
+
+        <div class="contoh">
+            Contoh: angka 1 sampai 6 pada dadu adalah titik sampel
+        </div>
+
+        <h3>Kejadian</h3>
+        <p>Kejadian adalah kumpulan titik sampel dari suatu percobaan.</p>
+
+        <div class="contoh">
+            Contoh: Saat melempar dadu, jika A adalah angka genap maka angka 2,4,6 adalah yg di inginkan
+        </div>
+
+        <h3>Frekuensi</h3>
+        <p><b>Frekuensi</b> adalah banyaknya suatu kejadian yang terjadi dalam percobaan.</p>
+
+        <div class="box">
+            Frekuensi Relatif = banyak kejadian / banyak percobaan
+        </div>
+
+        <div class="contoh">
+            Contoh: koin dilempar 10 kali muncul angka 6 kali <br>
+            Frekuensi = 6 <br>
+            Frekuensi relatif = 6/10 = 0,6
+        </div>
+
+    </div>
+
+    <!-- 3 -->
+    <button class="accordion">3. Kejadian Majemuk</button>
+    <div class="panel">
+
+        <p><b>Kejadian majemuk</b> adalah kejadian yang terdiri dari dua atau lebih kejadian sederhana.</p>
+
+        <h3>Kejadian Saling Lepas</h3>
+        <p><i>Kejadian saling lepas adalah kejadian yang tidak bisa terjadi bersamaan</i></p>
+
+        <div class="box">
+            P(A ∪ B) = P(A) + P(B)
+        </div>
+
+        <div class="contoh">
+            Contoh: Muncul angka 1 dan 2 dalam satu lemparan dadu
+        </div>
+
+        <h3>Kejadian Tidak Lepas</h3>
+        <p><i>Kejadian tidak lepas adalah kejadian yang bisa terjadi bersamaan</i></p>
+
+        <div class="box">
+            P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+        </div>
+
+        <div class="contoh">
+            Contoh: Saat mengambil kartu, jika A  kartu merah, dan B kartu queen, maka bisa bersamaan, misalnya queen hati
+        </div>
+
+        <h3>Kejadian Saling Bebas</h3>
+        <p><i>Kejadian saling bebas adalah kejadian yang tidak saling mempengaruhi</i></p>
+
+        <div class="box">
+            P(A ∩ B) = P(A) × P(B)
+        </div>
+
+        <div class="contoh">
+            Contoh: Saat melempar koin dan lempar dadu secara bersamaan
+        </div>
+
+        <h3>Kejadian Tidak Bebas</h3>
+        <p><i>Kejadian tidak bebas adalah kejadian yang saling mempengaruhi</i></p>
+
+        <div class="box">
+            P(A ∩ B) = P(A) × P(B|A)
+        </div>
+
+        <div class="contoh">
+            Contoh: Mengambil kartu tanpa pengembalian
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            var panel = this.nextElementSibling;
+            panel.style.display = panel.style.display === "block" ? "none" : "block";
+        });
+    }
+</script>
+
+</body>
+</html>
